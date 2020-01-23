@@ -1,0 +1,43 @@
+<html>
+ <head>
+ <title>Local Storage</title>
+ <script src="C:\Users\DELL\hello-next\pages\store.js" type="text/javascript">
+ </script>
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="stylesheet"
+ href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+ <link rel="stylesheet"  href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+ </head>
+ <body>
+<div style="border:2px darkblue;width:500px;float:left;top:200px;">
+<form name="form" onsubmit="store()">
+<div class="container">
+<div class="row">
+ <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+  Name   :<input type="text" id="uname" size="15"></br></br>
+  Branch  :<input type="text" id="branch" size="15"></br></br>
+  </div>
+<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+  PhoneNo  :<input type="text" id="phno" size="15"></br></br>
+  Postal code  :<input type="text" id="pc" size="15"></br></br>
+  </div>
+  <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+  Gender  :<br><input type="radio" name="gender" value="male">Male</input>
+    <input type="radio" name="gender" value="female">Female</input></br></br>
+  Country  :<br><input type="checkbox" name="lan[]" value="india">india</input>
+    <input type="checkbox" name="lan[]" value="usa">usa</input>
+    <input type="checkbox" name="lan[]" value="japan">japan</input></br></br>
+  </div>
+  <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+  Password  :
+ <input type="password" id="psw" size="15"></br></br>
+ confirm password:
+<input type="password" id="cpsw" size="15">
+</div>
+<input type="submit">
+ </form>
+</div>
+</div>
+ </body>
+</html>
