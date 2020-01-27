@@ -36,6 +36,15 @@
                     p.remove();
                 });
             });
+            var edi=$("<i class='fas fa-pencil-alt'></i>").click(function(){
+                var p=$(this).parent();
+                p.attr('contenteditable','true');
+            });
+            var upd=$("<i class='fas fa-save'></i>").click(function()
+            {
+                var p=$(this).parent();
+                p.attr('contenteditable','false');
+            });
             var check=$("<i class='fas fa-check'></i>").click(function(){
                 var p=$(this).parent();
                 p.fadeOut(function()
@@ -45,11 +54,40 @@
                 }
                 );
                 $(this).remove();
+                $(edi).remove();
+                $(upd).remove();
             }
             );
+           
+            //     var inp=$("<input/>").val(p.text());
+            //     p.replaceWith(inp);
+            //     var save=function(){
+            //         var taskedit=$("<div class='task'></div>").text(inp.val());
+            //         inp.replaceWith(taskedit);
+            //         var check=$("<i class='fas fa-check'></i>").click(function(){
+            //     var p=$(this).parent();
+            //     p.fadeOut(function()
+            //     {
+            //         $(".comp").append(p);
+            //         p.fadeIn();
+            //     }
+            //     );
+            //     $(this).remove();
+            // });
+            // var del=$("<i class='fas fa-trash-alt'></i>").click(function(){
+            //     var p=$(this).parent();
+            //     p.fadeOut(function()
+            //     {
+            //         p.remove();
+            //     });
+            
+            // });
+            //     } 
+            //     inp.one('blur',save).focus();
+            // });
             $(".notcomp").prepend(task);
             $(".txtb").val("");
-            task.append(del,check,ddo);
+            task.append(del,check,upd,edi,ddo);
             }
         })
         </script>

@@ -1,7 +1,7 @@
 *{
     margin:0;
     padding:0;
-    font-family:"cursive";
+    font-family:cursive;
     box-sizing: border-box;
 }
 body{
@@ -10,7 +10,7 @@ body{
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
-   
+    font-family: cursive;
 }
 #datetime
 {
@@ -44,6 +44,7 @@ body{
     padding: 18px;
     margin:6px 0;
     overflow: hidden;
+    position: sticky;
 }
 .dt
 {
@@ -53,9 +54,11 @@ body{
     float: right;
     margin-left: 20px;
     cursor: pointer;
+    position: sticky;
 }
 .comp .task{
     background: rgba(0,0,0,0.5);
     color:#fff;
     font-family: "cursive";
+    text-decoration: line-through;
 }
