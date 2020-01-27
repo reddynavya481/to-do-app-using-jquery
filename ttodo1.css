@@ -1,17 +1,27 @@
 *{
     margin:0;
     padding:0;
-    font-family:"montserrat",sans-serif;
+    font-family:"cursive";
     box-sizing: border-box;
 }
 body{
-    background-image: linear-gradient(120deg,#520961,white);
+    background-image: url("C:/Users/DELL/Pictures/todoback.jpg");
     min-height: 100vh;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+   
+}
+#datetime
+{
+    margin-left: 400px;
+    font-family: cursive;
 }
 .container{
     max-width: 800px;
     margin: auto;
-    padding: 10px
+    padding: 10px;
+    font-family: "cursive";
 }
 .txtb
 {
@@ -22,6 +32,7 @@ body{
     padding: 10px;
     outline:none;
     font-size: 18px;
+    font-family: cursive;
 }
 .h3
 {
@@ -34,6 +45,10 @@ body{
     margin:6px 0;
     overflow: hidden;
 }
+.dt
+{
+    float: right;
+}
 .task i{
     float: right;
     margin-left: 20px;
@@ -42,4 +57,5 @@ body{
 .comp .task{
     background: rgba(0,0,0,0.5);
     color:#fff;
+    font-family: "cursive";
 }
